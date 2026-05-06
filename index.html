@@ -225,26 +225,32 @@
 
 
 <!-- FACE SERUM -->
-<div class="work-card">
+<div class="work-card clickable tall"
+  onclick="openLightbox('https://www.youtube.com/embed/VmKSDgFXd9Y?autoplay=1&rel=0&modestbranding=1', 'Face Serum')">
+
   <div class="corner tl"></div>
   <div class="corner tr"></div>
   <div class="corner bl"></div>
   <div class="corner br"></div>
 
-  <div class="card-bg card-bg-serum"></div>
+  <!-- Thumbnail Image -->
+  <img class="card-img" src="YOUR_IMAGE_PATH_HERE" alt="Face Serum Animation">
+
   <div class="card-arrow">↗</div>
 
-  <div class="card-popup">
-    <div class="popup-icon">✨</div>
-    <div class="popup-title">Face Serum</div>
-    <div class="popup-sub">Laneige · Personal project<br>Luxury skincare animation with particle effects.</div>
-    <div class="popup-btn">View Project →</div>
+  <!-- Hover video UI -->
+  <div class="card-hover-overlay">
+    <div class="play-btn">
+      <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21" /></svg>
+    </div>
+    <div class="hover-title">// Play Video</div>
   </div>
 
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:1;">
-    <div class="card-tag">Beauty</div>
-    <div class="card-name">Lipstick</div>
-    <div class="card-desc">Mars · Personal project</div>
+  <!-- Text Content -->
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;z-index:2;">
+    <div class="card-tag">Skincare</div>
+    <div class="card-name">Face Serum</div>
+    <div class="card-desc">Laneige · Product animation</div>
   </div>
 </div>
 
